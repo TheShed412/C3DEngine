@@ -8,6 +8,7 @@
 typedef unsigned short color_t;
 
 #define RGB(red, green, blue) (((red) << 11) | ((green) << 5) | (blue))
+#define sign(x) ((x > 0)? 1 : ((x < 0)? -1: 0))
 
 void init_graphics();
 void exit_graphics();

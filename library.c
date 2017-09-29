@@ -214,12 +214,6 @@ static int my_abs(int num){
     else        return num;
 }
 
-static int my_sign(int num){
-    if(num > 0) return 1;
-    else if(num < 0) return -1;
-    else return 0;
-}
-
 /*
     img will be the offscreen buffer I draw to. I'm not drawing to the screen.
 */
@@ -245,8 +239,8 @@ void draw_line(void *img, int x1, int y1, int width, int height, color_t c) {
 
     int dy = my_abs(height - y1);
     int dx = my_abs(width - x1);
-    int s1 = my_sign(width - x1);
-    int s2 = my_sign(height - y1);
+    int s1 = sign(width - x1);
+    int s2 = sign(height - y1);
     int dbl_dy = dy*2;
     int diff = (dbl_dy - (2*dx));
 
