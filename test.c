@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "graphics.h"
+#include "point.h"
 
 void color_test(int red, int green, int blue){
     printf("Red: %x\n", red);

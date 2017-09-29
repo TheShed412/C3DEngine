@@ -16,11 +16,12 @@ typedef struct {
 typedef struct {
 	point start;
 	point end;
+	int magnitude;
 } vector;
 
 /*POINT OPEERATIONS*/
 void add_vec_to_point(point*, vector);
-void add_vec_to_point(sub*, vector);
+void sub_vec_to_point(point*, vector);
 vector* sub_points(point, point);
 
 /*VECTOR OPERATIONS*/
