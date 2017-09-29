@@ -34,15 +34,24 @@ void sub_vec_to_point(point* p1, vector vec){
 }
 
 static int get_mag(point p1, point p2){
+	// mag = x^2+y^2+z^2
+	
+	int x = p2.x - p1.x;
+	int y = p2.y - p1.y;
+	int z = p2.z - p1.z;
 
-	return -1;
+	int mag = (int)sqrt(x^2 + y^2 + z^2);
+
+	return mag;
 }
 
 vector* sub_points(point p1, point p2){
 
 	vector* vec = malloc(sizeof(vector));
 
-
+	vec->start 	= p1;
+	vec->end	= p2;
+	vec->magnitude = get_mag(p1, p2);
 
 	return vec;
 }
