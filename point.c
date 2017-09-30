@@ -55,3 +55,10 @@ vector* sub_points(point p1, point p2){
 
 	return vec;
 }
+
+void add_vectors(vector* vec_ret, vector vec){}
+void sub_vectors(vector* vec_ret, vector vec){}
+void xy_rotate(double deg, vector* vec_ret){}
+void xz_rotate(double deg, vector* vec_ret){}
+void yz_rotate(double deg, vector* vec_ret){}
+void scale(double x_mult, double y_mult, double z_mult, vector* vec_ret){}
