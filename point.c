@@ -57,7 +57,13 @@ vector* sub_points(point p1, point p2){
 	return vec;
 }
 
-void add_vectors(vector* vec_ret, vector vec){}
+void add_vectors(vector* vec_ret, vector vec){
+	point og_start = vec_ret->start;
+	point og_end = vec_ret->end;
+
+	
+}
+
 void sub_vectors(vector* vec_ret, vector vec){}
 void xy_rotate(double deg, vector* vec_ret){}
 void xz_rotate(double deg, vector* vec_ret){}
