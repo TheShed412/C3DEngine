@@ -10,8 +10,8 @@ typedef struct line_seg {
 	int end_y;
 } line_seg;
 
-line_seg* make_line_seg_p(point, point);
-line_seg* make_line_seg_v(vector);
-line_seg* points_in_segment(line_seg);
+line_seg* make_line_seg_p(const point*, const point*);
+line_seg* make_line_seg_v(const vector*);
+line_seg* points_in_segment(const line_seg*);
 
 #endif
